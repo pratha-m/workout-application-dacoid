@@ -1,0 +1,6 @@
+#burnImg{
+    background-image: url("/images/get_burn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

@@ -1,0 +1,189 @@
+.formPage{
+    position: relative;
+    top: 10px;
+    font-family:"Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 97vh;
+    padding-top: 25px;
+}
+/* form css */
+.formPage form{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* button css */
+.formPage form button{
+     height: 50px;
+     border-radius: 10px;
+     border: none;
+     color: white;
+     background-image: linear-gradient(40deg,var(--rect-btn-grad-light),var(--rect-btn-grad-dark));
+     line-height: var(--line-height-low);
+     font-size: var(--font-size-small);
+     font-weight: var(--font-weight-high) ;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+/* form heading css */
+.formPage form h1{
+    font-size: 20px;
+    font-weight: var(--font-weight-high);
+}
+/* form placeholder css */
+input::placeholder{
+    padding-left: 14px;
+    font-size: var(--font-size-very-small);
+    font-weight: var(--font-weight-high);
+    color: var(--color-dark-gray);
+}
+/* form fields css */
+.formPage form .fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* form input css */
+.formPage form .fields input{
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: var(--bg-light-gray);
+    height: 50px;
+    border-radius: 12px;
+    padding-left: 14px;
+}
+/* form agree terms css */
+.formPage form .fields .agreeTerms{
+    display: flex;
+    margin-top: 20px;
+    font-size: 12px;
+    align-items: center;
+}
+/* form checkbox css */
+.formPage form .fields .agreeTerms input{
+    border: none;
+    outline: none;
+    margin-top: 0px;
+    height: 20px;
+    width: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color:transparent;
+}
+
+
+input[type=checkbox] {
+    position: relative;
+      border: 1px solid gray;
+      border-radius: 5px;
+      background: none;
+      cursor: pointer;
+      line-height: 0;
+      margin: 0 .6em 0 0;
+      outline: 0;
+      padding: 0 !important;
+      vertical-align: text-top;
+      height: 20px;
+      width: 20px;
+      -webkit-appearance: none;
+  }
+  
+  input[type=checkbox]:hover {
+    opacity: 1;
+  }
+  
+  input[type=checkbox]:checked {
+    background-image: linear-gradient(40deg,var(--rect-btn-grad-light),var(--rect-btn-grad-dark));
+    opacity: 1;
+  }
+  input[type=checkbox]:before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 4px;
+    height: 10px;
+    border: solid #FFF;
+    border-width: 0 2px 2px 0;
+    margin: -1px -1px 0 -1px;
+    transform: rotate(45deg) translate(-50%, -50%);
+    z-index: 2;
+  }
+
+
+
+.formPage form .fields .agreeTerms label{
+    margin-left: 5px;    
+    font-weight: var(--font-weight-low);
+    color: var(--color-dark-gray);
+    font-size: var(--font-size-very-small);
+}
+.formPage form .fields .agreeTerms label a{
+    border: none;
+    color: var(--extra-light-blue-txt);
+    text-decoration: underline;
+}
+/* Foot CSS */
+.formPage .foot{
+    position: relative;
+    height: 150px;
+}
+/* foot separator */
+.formPage .foot .seperator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:20px 0px;
+    font-size: var(--font-size-very-small);
+    font-weight: var(--font-weight-low);
+    line-height: 14.63px;
+}
+.formPage .foot .seperator span{
+    width: 55%;
+    height:1px;
+    background-color: var(--color-dark-gray);
+    margin:5px;
+}
+/* foot links css */
+.formPage .foot .otherLinks{
+   display:flex ;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.formPage .foot .otherLinks .socials{
+    display: flex;
+}
+.formPage .foot .otherLinks .socials span{
+     display: flex;
+     height: 44px;
+     width: 44px;
+     border: 1px solid var(--color-dark-gray);
+     margin:0px 15px;
+     border-radius: 10px;
+     background-size:70% 70%;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+.formPage .foot .otherLinks .socials span:nth-child(1){
+    background-image: url("./images/google_icon.webp");
+}
+.formPage .foot .otherLinks .socials span:nth-child(2){
+    background-image: url("./images/facebook_icon.png");
+}
+.formPage .foot .otherLinks .account{
+     padding-top: 20px;
+     font-size: var(--font-size-very-small);
+     font-weight:400;
+     line-height: var(--line-height-very-low);
+}
+.formPage .foot .otherLinks .account a{
+    border: none;
+    color: var(--extra-light-blue-txt);
+    text-decoration: underline;
+}

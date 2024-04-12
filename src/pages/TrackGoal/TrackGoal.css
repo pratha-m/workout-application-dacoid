@@ -1,0 +1,76 @@
+.TrackGoal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+/* Skip button CSS  */
+.TrackGoal .upperBar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.TrackGoal .upperBar a{
+    background-color: transparent;
+    border: none;
+    align-self: flex-end;
+    color: var(--light-blue-txt);
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: underline;
+}
+/* image css */
+.TrackGoal .innerImg{
+    height: 282px;
+    width: 282px;
+    top: 132;
+    left: 46;
+    background-image: url("/images/track_goal.png");
+    background-size: cover;
+} 
+
+/* innerTxt css */
+/* Heading */
+.TrackGoal .innerTxt h1{
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-high);
+    line-height: var(--line-height-high);
+}
+/* paragraph */
+.TrackGoal .innerTxt p{
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-low);
+    line-height: var(--line-height-low);
+    color: var(--gray);
+}
+/* Lower Bar css */
+.TrackGoal .lowerBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    top: 150px;
+    position: relative;
+}
+/* Circle Button */
+.TrackGoal .lowerBar .circle{
+    width: 60px;
+    height: 60px;
+    background-image: linear-gradient(40deg,var(--circle-btn-grad-light),var(--circle-btn-grad-dark));
+    border-radius: 100%;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+}
+.TrackGoal .lowerBar .circle .arrow{
+    height: 15px;
+    width: 15px;
+    background-image: url("/images/right-arrow.png");
+    background-size: cover;
+}

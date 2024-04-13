@@ -1,0 +1,286 @@
+.workoutTrackerPage{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.workoutTrackerPage .head{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.workoutTrackerPage .head .backBtnCont{
+    flex: 0.5;   
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.workoutTrackerPage .head .backBtnCont a{
+    position: relative;
+    height: 25px;
+    width: 25px;
+    background-color: var(--bg-light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.workoutTrackerPage .head .backBtnCont a svg{
+    height: 20px;
+    width: 10px;
+}
+.workoutTrackerPage .head h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: var(--font-weight-high);
+    flex: 5;
+    color: #2C2B2B;
+}
+/* Bar graph css */
+.workoutTrackerPage .barGraph{
+    height: 120px;
+    width: 300px;
+}
+.workoutTrackerPage .barGraph svg{
+    height: 100%;
+    width: 100%;
+}
+ 
+/* Message box */
+.workoutTrackerPage .msgBox{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(40deg,#b8c2e8 28%,white);
+    border-radius: 10px;
+}
+.workoutTrackerPage .msgBox p{
+    font-size: var(--font-size-very-small);
+    font-weight: var(--font-weight-low);
+    line-height: var(--line-height-very-low);
+}
+
+/* upcomign events */
+.workoutTrackerPage .upcomingWorkouts{
+    margin-top: 25px;   
+    width: 100%;
+}
+.workoutTrackerPage .upcomingWorkouts .upComeHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.workoutTrackerPage .upcomingWorkouts .upComeHead h2{
+    font-size: 20px;
+    font-weight: var(--font-weight-high);
+    color: #2C2B2B;
+}
+.workoutTrackerPage .upcomingWorkouts .upComeHead a{
+    text-decoration: none;
+    color: var(--color-dark-gray);
+    font-size: var(--font-size-very-small);
+    font-weight: 500;
+}
+.workoutTrackerPage .upcomingWorkouts .workouts{
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.workoutTrackerPage .upcomingWorkouts .workouts .eachWorkout{
+    height: 70px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow:0px 4px 13px -2px rgba(0,0,0,0.2);
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 6px 0px;
+}
+.workoutTrackerPage .upcomingWorkouts .workouts .eachWorkout .other{
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex: 3;
+}
+.workoutTrackerPage .upcomingWorkouts .workouts .eachWorkout .other .image{
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   background-color:#e3e4e9;
+}
+.workoutTrackerPage .upcomingWorkouts .workouts .eachWorkout .other .image img{
+    height: 100%;
+    width: 100%;
+}
+.workoutTrackerPage .upcomingWorkouts .workouts .eachWorkout .other .text{
+    height: 100%;
+    padding: 10px 9px;
+}
+.workoutTrackerPage .upcomingWorkouts .workouts .eachWorkout .other .text h3{
+    font-size: var(--font-size-very-small);
+    font-weight: var(--font-weight-low);
+    line-height: var(--line-height-very-low);
+} 
+.workoutTrackerPage .upcomingWorkouts .workouts .eachWorkout .other .text p{
+    padding-top: 10px;
+    font-size: 10px;
+    color: var(--color-dark-gray);
+}
+
+.container {
+    text-align: center;
+}
+.toggle-switch {
+    position: relative;
+    width: 75px;
+    display: inline-block;
+    text-align: left;
+    top: 8px;
+  }
+  .checkbox {
+    display: none;
+  }
+  .label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0 solid #bbb;
+    border-radius: 20px;
+  }
+  .inner {
+    display: block;
+    width: 206%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+  }
+  .inner:before,
+  .inner:after {
+    float: left;
+    width: 50%;
+    height: 36px;
+    padding: 0;
+    line-height: 36px;
+    color: #fff;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  .inner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #8099FF;
+    color: #fff;
+  }
+  .inner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #8099FF;
+    color: #fff;
+    text-align: right;
+  }
+  .switch {
+    display: block;
+    width: 24px;
+    margin: 5px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 40px;
+    border: 0 solid #bbb;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+  }
+  .checkbox:checked + .label .inner {
+    margin-left: 0;
+  }
+  .checkbox:checked + .label .switch {
+    right: 0px;
+  }
+
+/* what train */
+.workoutTrackerPage .extraBox{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.workoutTrackerPage .extraBox h2{
+    font-size: 20px;
+    font-weight: var(--font-weight-high);
+    color: #2C2B2B;
+}
+.workoutTrackerPage .whatTrain{
+    height: 123px;
+    width: 100%;
+    background-color: #9abbff;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin: 10px 0px;
+}
+.workoutTrackerPage .whatTrain .text{
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.workoutTrackerPage .whatTrain .text h3{
+    font-size: var(--font-size-very-small);
+    margin-top: 10px;
+    font-weight: 500;
+    color: #2C2B2B;
+}
+.workoutTrackerPage .whatTrain .text span{
+    font-size: 10px;
+    margin-top: 10px;
+}
+.workoutTrackerPage .whatTrain .image{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #ffdcdc;
+}
+.workoutTrackerPage .whatTrain .image img{
+    height: 100%;
+    width: 100%;
+}
+
+  /* Foot CSS  */
+.workoutTrackerPage .foot{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    bottom: 0px;
+    position: fixed;
+    background-color: white;
+}
+.workoutTrackerPage .foot .eachOpt{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gray; */
+}
+.workoutTrackerPage .foot #centerOpt{
+    height: 60px;
+    width: 60px;
+    background-image: linear-gradient(40deg,var(--circle-btn-grad-light),var(--circle-btn-grad-dark));
+    border-radius: 100%;
+    position: relative;
+    top: -21px;
+    box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.1);
+}

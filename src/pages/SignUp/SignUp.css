@@ -166,16 +166,21 @@ input[type=checkbox] {
      border: 1px solid var(--color-dark-gray);
      margin:0px 15px;
      border-radius: 10px;
-     background-size:70% 70%;
-     background-position: center;
-     background-repeat: no-repeat;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
-.formPage .foot .otherLinks .socials span:nth-child(1){
+.formPage .foot .otherLinks .socials span svg{
+    height: 20px;
+    width: 20px;
+}
+
+/* .formPage .foot .otherLinks .socials span:nth-child(1){
     background-image: url("./images/google_icon.webp");
 }
 .formPage .foot .otherLinks .socials span:nth-child(2){
     background-image: url("./images/facebook_icon.png");
-}
+} */
 .formPage .foot .otherLinks .account{
      padding-top: 20px;
      font-size: var(--font-size-very-small);
